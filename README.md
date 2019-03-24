@@ -6,7 +6,7 @@ This side project is created with Node.js, React, Express, and MySQL. What it do
           2)you are so bored and want to eat something you haven't had for so long
 In addition, it also shows the dates of the last three meals we just had at each restaurant.
 
-![Alt text](/webpagepic.jpg?raw=true "Title")
+![Alt text](webpagepic.jpg?raw=true "Title")
 
 Note that: it only runs locally, so if you want to test it, you have to download all the code and the database
 
