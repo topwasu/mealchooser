@@ -1,0 +1,3 @@
+[submodule "mealchooser"]
+	path = mealchooser
+	url = https://github.com/topwasu/mealchooser
