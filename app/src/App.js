@@ -17,6 +17,7 @@ class App extends Component {
       recentplace: "...",
       suggestedplace1: null,
       suggestedplace2: null,
+      fixedstartDate: new Date(),
       startDate: new Date(),
       meal: "lunch",
       hist: {},
@@ -72,7 +73,7 @@ class App extends Component {
           forhist[data[i].name].push(data[i].date.substr(0,10));
         }
         //calculate the differnece
-        diffDays = Math.round((this.state.startDate.getTime() - jsDate.getTime())/(oneDay));
+        diffDays = Math.round((this.state.fixedstartDate.getTime() - jsDate.getTime())/(oneDay));
         //add weighted score base on the difference\
         console.log(data[i].name, data[i].date.substr(0,10), diffDays);
         score[data[i].name] += Math.max(14 - diffDays, 0) * 2;
@@ -137,7 +138,7 @@ class App extends Component {
           forhist[data[i].name].push(data[i].date.substr(0,10));
         }
         //calculate the differnece
-        diffDays = Math.round((this.state.startDate.getTime() - jsDate.getTime())/(oneDay));
+        diffDays = Math.round((this.state.fixedstartDate.getTime() - jsDate.getTime())/(oneDay));
         //add weighted score base on the difference\
         console.log(data[i].name, data[i].date.substr(0,10), diffDays);
         score[data[i].name] += Math.max(14 - diffDays, 0) * 2;
